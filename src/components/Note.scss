@@ -1,0 +1,66 @@
+.note {
+  &-container {
+    border: 1px solid #ccc;
+    padding: 20px 100px;
+    margin-bottom: 10px;
+    width: 500px;    
+  }
+  
+  &-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  &-content {
+    margin-bottom: 10px;
+    span {
+      &.tag {
+        color: blue;
+      }
+    }
+  }
+  
+  &-tags {
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      background-color: #ddd;
+      padding: 5px;
+      border-radius: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-left: 5px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  &-edit {
+    border: 1px solid green;
+    color: green;
+    background-color: transparent;    
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25%;    
+  }
+
+  &-delete {    
+    background-color: transparent;
+    color: red;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25%;
+    border: 1px solid red;
+  }
+} 
+  
